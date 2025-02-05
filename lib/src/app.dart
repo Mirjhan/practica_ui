@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:practica_ui/src/pages/login_1/login_page.dart';
 //import 'package:practica_ui/src/pages/login_1/login_page.dart';
-import 'package:practica_ui/src/pages/login_1/register.dart';
+import 'package:practica_ui/src/pages/login_1/register_page.dart';
+import 'package:practica_ui/src/pages/login_2/faceplant_page.dart';
+import 'package:practica_ui/src/pages/login_2/success_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const RegisterPage(),
+      home: const SuccessPage(),
     );
   }
 }
