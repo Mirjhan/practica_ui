@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:practica_ui/src/pages/login_1/register_page.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  const LoginPage({super.key, required this.controllerOfContent});
+
+  final PageController controllerOfContent;
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +102,10 @@ class LoginPage extends StatelessWidget {
   Widget botonRegister() {
     return Expanded(
       flex: 1,
-      child: Container(
+      child: GestureDetector(
+        onTap: () => {
+          controllerOfContent.jumpToPage(1),
+        },
         child: Align(
           alignment: Alignment.topLeft,
           child: Container(

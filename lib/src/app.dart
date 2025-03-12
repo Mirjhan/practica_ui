@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:practica_ui/src/pages/login_1/login_page.dart';
-//import 'package:practica_ui/src/pages/login_1/login_page.dart';
-import 'package:practica_ui/src/pages/login_1/register_page.dart';
-import 'package:practica_ui/src/pages/login_2/faceplant_page.dart';
-import 'package:practica_ui/src/pages/login_2/success_page.dart';
+import 'package:practica_ui/src/pages/login_5/login_page5.dart';
+import 'package:practica_ui/src/pages/login_5/loginn_page5.dart';
+import 'package:practica_ui/src/pages/login_6/getStarted_page.dart';
+import 'package:practica_ui/src/pages/login_6/signin_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,10 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SuccessPage(),
+      home: SigninPage(),
     );
   }
 }

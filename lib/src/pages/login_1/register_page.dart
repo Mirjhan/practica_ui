@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
-  const RegisterPage({super.key});
+  const RegisterPage({super.key, required this.controllerOfContent});
+  final PageController controllerOfContent;
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +102,8 @@ class RegisterPage extends StatelessWidget {
   Widget botonLogin() {
     return Expanded(
       flex: 2,
-      child: Container(
+      child: GestureDetector(
+        onTap: () => {controllerOfContent.jumpToPage(0)},
         //color: Colors.blue,
         child: Align(
           alignment: Alignment.bottomRight,
